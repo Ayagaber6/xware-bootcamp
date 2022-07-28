@@ -1,0 +1,182 @@
+
+body
+{
+    margin:auto;
+}
+ul
+{
+    list-style-type: none; 
+}
+ul li a
+{
+    text-decoration: none;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+ul li 
+{
+    float:left;
+    padding-right: 20px;
+}
+#main
+{
+    width:100%;
+    height:1500px;
+    margin:auto;
+}
+#top
+{
+
+    position: relative;
+    background-image:url('LANDING_HERO.jpg');
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    
+    width:100%;
+    height:45%;
+    text-align: center;
+
+}
+#logo, #menu, #login
+{
+    height:100%;
+    width:33%;
+    float:left;
+}
+#logo img
+{
+    width:25%;
+    height:35px;
+}
+#nav_bar
+{
+    width:100%;
+    height:20%;
+    position:absolute;
+}
+#nav_button
+{
+    height:30px;
+    width:160px;
+    border-radius: 20px;
+    margin:0;
+    padding:0;
+}
+#logo
+{
+    text-align: left;
+}
+#cover_button
+{
+    width:300px;
+    height:80px;
+    border-radius: 70px;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top:480px;
+}
+.bottom
+{
+        width:70%;
+    height:500px;
+    position: relative;
+    left:15%;
+}
+.bottom-right
+{
+    
+    width:40%;
+    text-align: right;
+    float:right;
+}
+.bottom-right h1
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 45px;;
+}
+.bottom-right h3
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: lighter;
+}
+.bottom-right a
+{
+    text-decoration: none;
+    display: block;
+    color:black;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    padding-bottom: 10px;;
+}
+.bottom-right a:hover
+{
+    font-size:30px;
+    transition: font-size,1s;
+}
+.bottom-left
+{
+    width:40%;
+    float:left;
+    padding-top:30px;
+}
+.img-size
+{
+    width:200px;
+    height:200px;
+    border-radius: 40px;
+}
+
+.img-size:hover
+{
+transition: width 2s , height 2s;
+width:300px;
+height:300px;
+}
+.media
+{
+    width:70%;
+    position: relative;
+    left:15%;
+}
+.song
+{
+    
+    width:100% ;
+    height:190;
+    border-radius: 10px;
+}
+footer
+{
+    background-color: #f1f5f7;
+    width:100%;
+    height:200px;
+    text-align: center;
+    padding-top:100px;
+}
+footer a 
+{
+    text-decoration: none;
+    color:black;
+    font-size:20px;
+    padding:20px;
+}
+footer a:hover
+{
+    text-decoration:underline;
+}
+footer button
+{
+    width:100px;
+    height:40px;
+    border-radius:20px;
+    margin:10px;
+    font-size: 15px;;
+}
+footer button:hover
+{
+    background-color: #f4e8e4;
+    color:black;
+}
