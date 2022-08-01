@@ -1,0 +1,450 @@
+
+.container
+{
+    width:100%;
+    height:4250px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: grid;
+    overflow: hidden;
+    position: relative;
+    grid-template-rows: 850px 450px 1130px 900px 500px 400px;
+    grid-template-columns: 900px 900px;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "main main"
+    "main main"
+    "main main"
+    "footer footer";
+    gap:100px;    
+}
+header
+{
+    grid-area: header;
+    width:100%;
+    height:850px;
+    background-image: linear-gradient(to top right, #60c68d, #475db1);
+    display:grid;
+    justify-content: center;
+    text-align: center;
+    line-height:60px;
+}
+.txt
+{
+    
+    grid-area: header;
+    width:640px;
+    height:65%;
+    position: relative;
+    bottom:20%;
+    color: white;
+    -webkit-animation: fadein 2s; 
+    -moz-animation: fadein 2s;
+     -ms-animation: fadein 2s; 
+      -o-animation: fadein 2s; 
+         animation: fadein 2s;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+header h1
+{
+    font-size:45px;   
+    font-weight: lighter;
+    line-height:60px;
+}
+header a
+{
+    color: #eee9e6;
+    text-decoration:dashed;
+    border-bottom: 1px dotted white;
+}
+header a:hover
+{
+    border-bottom:0px;
+}
+header h2
+{
+    font-weight: lighter; 
+    font-family:Verdana, Geneva, Tahoma, sans-serif;  
+    line-height:40px;
+}
+.bt-tran
+{
+    grid-area: header;
+    height:35%;
+    position:relative;
+    animation: moving 2s;
+    animation-timing-function: ease 2s;
+    bottom:-45%;
+}
+
+.bt-tran button
+{
+    width:200px;
+    height:55px;
+    color: white;
+    background-color: Transparent;
+    border:1px solid white;
+    border-radius: 3px;
+    margin-top:40px;
+
+}
+@keyframes moving
+{
+    from {bottom:-100%;}
+    to {bottom:-45%;}
+}
+
+.ver-line
+{
+    border-left:1px solid white;
+    position: relative;
+    left:50%;
+    height:300px;
+    margin-bottom: 60px;
+    
+}
+.pra1
+{
+    grid-area: main;
+    width:1800px;
+    height:450px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+}
+.pra1-left
+{
+    grid-area: main;
+    width:40%;
+    height:100%;
+    float:left;
+    text-align: left;
+    position: absolute;
+    left:10%;
+}
+.pra1-left h1
+{
+    font-weight: lighter;
+    font-size: 35px;
+    line-height:50px;
+    color: #727370;
+}
+.hor-line
+{
+    width:250px;
+    border-bottom:1px solid #727370;
+}
+.pra1-left h2
+{
+    font-weight: lighter;
+    font-size: 20px;
+    line-height:40px;
+    color:#727370;
+}
+.pra1-right
+{
+    grid-area: main;
+    width:40%;
+    height:100%;
+    position: absolute;
+    right:0%;
+    text-align: left;
+}
+.pra2
+{
+    grid-area: main;
+    width:100%;
+    height:1130px;
+    color: #fff;
+    display: grid;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+}
+.pra2-left
+{
+    width:40%;
+    height:100%;
+    position: relative;
+    top:10%;
+}
+.pra2-right
+{
+    width:40%;
+    height:100%;
+    text-align: left;
+    position: relative;
+    top:10%;
+}
+.pra2-right h1
+{
+    font-weight: lighter;
+    font-size: 35px;
+    line-height:50px;
+    color: white;
+    width:75%;
+}
+.pra2-right h2
+{
+    width:75%;
+    font-weight: lighter;
+    font-size: 20px;
+    line-height:40px;
+}
+.bottom
+{
+    grid-area: main;
+    width:1850px;
+    height:1900px;
+    background-image: url('overlay1.png'),url('header.jpg');
+    background-repeat: no-repeat;
+    background-size:100% 2000px;
+    overflow: hidden;
+    background-attachment: fixed;
+    
+}
+.line1, .line2, .line3
+{
+    list-style-type: none;
+    display: inline-block;
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom:20px;
+}
+.line1 li , .line2 li , .line3 li
+{
+    
+    width:200px;
+    height:200px;
+    
+    display: inline-block;
+    font-size:130px;
+    margin:50px;
+    border-radius: 10px;
+    border:1px solid white;
+    text-align: center;
+    transform: rotate(45deg);
+}
+.line1 li i, .line2 li i, .line3 li i
+{
+    transform: rotate(-45deg);
+}
+.line1 .fa-code
+{
+    color:#abf594;
+    right:15%;
+    top:20%;
+}
+.line1 .fa-bolt
+{
+    color:#4aeba9;
+}
+.line2 .fa-camera
+{
+    color:#00dec8;
+    right:20%;
+    top:20%;
+    
+}
+.line2 .fa-cog
+{
+    color:#27a5c6;
+    right:10%;
+    top:20%;
+}
+.line3 .fa-desktop
+{
+    color:#437cd4;
+    right:15%;
+    top:25%;
+
+}
+.line3 .fa-calendar
+{
+    color:#7374e7;
+    
+   right:15%;
+    
+}
+.pra3
+{
+    grid-area: main;
+    width:100%;
+    height:900px;
+    background-color: white;
+    color:#727370;
+    position: relative;
+    top:60%;
+    display: grid;
+    justify-content: center;
+}
+.pra3-head
+{
+    
+    padding-top:50px;
+    width:100%;
+    height:200px;
+    text-align: center;
+}
+.pra3-head h2
+{
+    line-height:100px;
+}
+.pra3 .hor-line
+{
+    position: absolute;
+    left:42%;
+}
+.pra3 h1 , .pra3 h2
+{
+    font-weight: lighter;
+}
+.part
+{
+    width:400px;
+    text-align: center;
+}
+
+.cp-around
+{
+    width:100%;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 700px;
+    justify-content: space-around;
+}
+.bt
+{
+    width:140px;
+    height:50px;
+    background-color: transparent;
+    border:1px solid #727370;
+    border-radius: 3px;
+}
+.bt a
+{
+    text-decoration: none;
+    color:#727370;
+    font-size:20px;
+}
+.bt:hover
+{
+    background-color: #f7f7f7
+}
+.part img
+{
+    border-radius: 5px;
+}
+.pra4
+{
+    grid-area: main;
+    width:100%;
+    height:500px;
+    position:absolute;
+    top:75%;
+    color:white;
+    text-align: center;
+    line-height:90px;
+    background-image: url('overlay1.png'),url('header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    overflow: hidden;
+    background-attachment: fixed;
+}
+.pra4 .hor-line
+{
+    position: relative;
+    left:43%;
+    border-bottom: 1px solid white;
+}
+.pra4 a
+{
+    width:200px;
+    height:30px;
+    margin:10px;
+    background-color: transparent;
+    border:1px solid white;
+    border-radius: 5px;
+    text-decoration: none;
+    color:white;
+    display: inline-block;
+    padding-bottom:50px;
+}
+
+#sign
+{
+    background-color: white;
+    color: black;
+}
+#sign:hover
+{
+    background-color: transparent;
+    color:white;
+}
+footer
+{
+    grid-area:footer;
+    width:100%;
+    height:400px;
+    background-image:linear-gradient(to bottom left, #60c68d, #475db1) ;
+    position: relative;
+    bottom:110%;
+    text-align: center;
+}
+.fa {
+
+    padding: 20px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    color:white;
+    position:relative;
+    top:15%;
+}
+#foot
+{
+    position:relative;
+    top:30%;
+}
+#foot a
+{
+   text-decoration: none;
+   color:white;
+   padding:20px;
+}
+.link1, .link2
+{
+    border-left:1px solid white;
+}
+
