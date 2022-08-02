@@ -2,7 +2,7 @@
 .container
 {
     width:100%;
-    height:4250px;
+    height:4300px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: grid;
     overflow: hidden;
@@ -16,6 +16,7 @@
     "main main"
     "main main"
     "footer footer";
+    justify-content: center;
     gap:100px;    
 }
 header
